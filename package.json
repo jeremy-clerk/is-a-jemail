@@ -1,0 +1,51 @@
+{
+  "name": "is-a-jemail",
+  "version": "1.2.0",
+  "description": "Is it an email? Ask Jev.",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "engines": {
+    "node": ">=24",
+    "bun": ">=1.4"
+  },
+  "scripts": {
+    "test": "node --test test/index.node.js",
+    "test:node": "node --test test/index.node.js",
+    "test:bun": "bun test",
+    "test:all": "node --test test/index.node.js && bun test",
+    "typecheck": "tsc --noEmit --allowJs --checkJs --strict --target es2022 --module nodenext --types node index.js"
+  },
+  "keywords": [
+    "email",
+    "email-validation",
+    "ai",
+    "bun",
+    "jev",
+    "openrouter",
+    "typesafe"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremy-clerk/is-a-jemail.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jeremy-clerk/is-a-jemail/issues"
+  },
+  "homepage": "https://github.com/jeremy-clerk/is-a-jemail#readme",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^26.6.1",
+    "typescript": "^7.0.2"
+  }
+}
